@@ -20,12 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Fantasmas.cpp" />
-    <ClCompile Include="src\Bonus.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Bonus.h" />
     <ClInclude Include="src\Fantasmas.h" />
     <ClInclude Include="src\Vector2D.h" />
   </ItemGroup>
