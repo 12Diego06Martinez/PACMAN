@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Bonus.cpp" />
+    <ClCompile Include="src\Bonus.cpp" />
     <ClCompile Include="src\Fantasma.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Vector2D.cpp" />
