@@ -89,6 +89,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\src</OutDir>
+    <IntDir>.\temp</IntDir>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\DIEGO\PROGRAMAS\INFORMATICA INDUSTRIAL\LIBRERIAS\glut-376\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\DIEGO\PROGRAMAS\INFORMATICA INDUSTRIAL\LIBRERIAS\glut-376\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -99,6 +104,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>.\src</OutDir>
+    <IntDir>.\temp</IntDir>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\DIEGO\PROGRAMAS\INFORMATICA INDUSTRIAL\LIBRERIAS\glut-376\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\DIEGO\PROGRAMAS\INFORMATICA INDUSTRIAL\LIBRERIAS\glut-376\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
