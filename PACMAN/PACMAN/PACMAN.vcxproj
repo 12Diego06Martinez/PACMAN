@@ -22,6 +22,7 @@
     <ClCompile Include="src\Bolitas.cpp" />
     <ClCompile Include="src\Bonus.cpp" />
     <ClCompile Include="src\Fantasmas.cpp" />
+    <ClCompile Include="src\ListaBolitas.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
@@ -29,6 +30,7 @@
     <ClInclude Include="src\Bolitas.h" />
     <ClInclude Include="src\Bonus.h" />
     <ClInclude Include="src\Fantasmas.h" />
+    <ClInclude Include="src\ListaBolitas.h" />
     <ClInclude Include="src\Vector2D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
