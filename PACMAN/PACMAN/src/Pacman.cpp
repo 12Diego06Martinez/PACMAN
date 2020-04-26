@@ -35,7 +35,8 @@ void Pacman::Mueve(float t)
 
 void Pacman::SetVel(float vx, float vy)
 {
-
+	velocidad.x = vx;
+	velocidad.y = vy;
 }
 
 void Pacman::SetColor(unsigned char r, unsigned char v, unsigned char a)

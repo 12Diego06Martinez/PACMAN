@@ -23,6 +23,7 @@ public:
 	void SetRadio(float r);
 	void SetPos(float ix, float iy);
 	void SetVel(float vx, float vy);
+	
 	friend class Interaccion;
 
 };

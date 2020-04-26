@@ -1,7 +1,8 @@
 #include "Vector2D.h"
+#include "stdlib.h"
 #include "glut.h"
 
-//////////////////////////////////////////////CONSTRUCTOR-DESTRUCTOR/////////////////////////////////
+//CONSTRUCTOR-DESTRUCTOR
 Vector2D::Vector2D(float xv, float yv)
 {
 	x = xv;
