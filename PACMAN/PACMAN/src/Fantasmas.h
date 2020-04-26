@@ -1,5 +1,10 @@
 #pragma once
-class Fantasma
+class Fantasmas
 {
+public:
+	Fantasmas();
+	virtual ~Fantasmas();
+private:
+
 };
 
