@@ -13,6 +13,15 @@ void ListaBolitas::Dibuja() {
 		lista[i]->Dibuja();
 }
 
+void ListaBolitas::SetP() {
+	int n=0;
+	for (int i = 0;i < MAX_V;i++)
+		for (int j = 0;j < MAX_H;j++) {
+			lista[n]->SetPos(j, i);
+			n++;
+		}
+}
+
 void ListaBolitas::Eliminar(int index) {
 	if ((index < 0) || (index >= numero))
 		return;
