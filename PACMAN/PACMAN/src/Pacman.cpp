@@ -1,6 +1,6 @@
-#include "Pacman.h"
 #include "stdlib.h"
 #include "glut.h"
+#include "Pacman.h"
 
 
 // CONSTRUCTOR-DESTRUCTOR
