@@ -91,7 +91,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>.\src</OutDir>
     <IntDir>.\temp</IntDir>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
