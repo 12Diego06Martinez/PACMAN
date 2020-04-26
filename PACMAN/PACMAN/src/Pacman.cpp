@@ -7,7 +7,8 @@
 
 Pacman::Pacman()
 {
-
+	radio = 1.0f;
+	rojo = verde = azul = 255;
 }
 
 Pacman::~Pacman()
@@ -20,11 +21,10 @@ Pacman::~Pacman()
 
 void Pacman::Dibuja()
 {
-	glPushMatrix();
-	glTranslatef(posicion.x, posicion.y + 1, 0);
-	glColor3f(1.0f, 1.0f, 0.0f);
-	glutSolidSphere(, , ); //El hombre se representa como un cubo
-	glPopMatrix();
+	glColor3ub(rojo, verde, azul);
+	glTranslatef(posicion.x, posicion.y, 0);
+	glutSolidSphere(radio,20,20); //Para empezar el pacman se representa como una esfera, ya lo cambiaremos
+	glTranslatef(-posicion.x, -posicion.y, 0);
 }
 
 void Pacman::Mueve(float t)
@@ -35,4 +35,22 @@ void Pacman::Mueve(float t)
 void Pacman::SetVel(float vx, float vy)
 {
 
+}
+
+void Pacman::SetColor(unsigned char r, unsigned char v, unsigned char a)
+{
+	rojo = r;
+	verde = v;
+	azul = a;
+}
+
+void Pacman::SetRadio(float r)
+{
+	radio = r;
+}
+
+void Pacman::SetPos(float ix, float iy)
+{
+	posicion.x = ix;
+	posicion.y = iy;
 }
