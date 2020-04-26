@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Pacman.cpp" />
     <ClCompile Include="src\Bonus.cpp" />
     <ClCompile Include="src\Fantasmas.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Pacman.cpp" />
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>

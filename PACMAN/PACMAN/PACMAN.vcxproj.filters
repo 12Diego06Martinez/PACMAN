@@ -27,7 +27,7 @@
     <ClCompile Include="src\Fantasmas.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Pacman.cpp">
+    <ClCompile Include="src\Pacman.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
