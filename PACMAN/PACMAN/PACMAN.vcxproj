@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Pacman.cpp" />
     <ClCompile Include="src\Bonus.cpp" />
     <ClCompile Include="src\Fantasmas.cpp" />
     <ClCompile Include="src\Main.cpp" />
@@ -27,6 +28,7 @@
   <ItemGroup>
     <ClInclude Include="src\Bonus.h" />
     <ClInclude Include="src\Fantasmas.h" />
+    <ClInclude Include="src\Pacman.h" />
     <ClInclude Include="src\Vector2D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
