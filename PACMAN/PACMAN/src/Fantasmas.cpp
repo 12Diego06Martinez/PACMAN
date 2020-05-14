@@ -1,6 +1,7 @@
 #include "Fantasmas.h"
-#include "stdlib.h"
 #include "glut.h"
+#include "stdlib.h"
+
 
 //CONSTRUCTOR-DESTRUCTOR
 Fantasmas::Fantasmas()
