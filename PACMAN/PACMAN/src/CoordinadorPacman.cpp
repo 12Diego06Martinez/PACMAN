@@ -1,5 +1,6 @@
 #include "CoordinadorPacman.h"
 #include "ETSIDI.h"
+#include "stdlib.h"
 #include "glut.h"
 
 CoordinadorPacman::CoordinadorPacman()
