@@ -6,6 +6,7 @@
 #include "glut.h"
 #include <math.h>
 
+
 Mundo::Mundo()
 {
 
@@ -27,6 +28,7 @@ void Mundo::Dibuja()
 	pacman.Dibuja();
 	bonus.Dibuja();
 	fantasmas.Dibuja();
+
 	
 }
 
