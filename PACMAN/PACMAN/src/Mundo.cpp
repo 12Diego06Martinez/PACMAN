@@ -5,9 +5,6 @@
 #include "glut.h"
 #include <math.h>
 
-#include <iostream>
-using namespace ETSIDI;
-using ETSIDI::getTexture;
 
 Mundo::Mundo()
 {
@@ -19,7 +16,6 @@ Mundo::~Mundo()
 	
 }
 
-Sprite* sprite;
 
 void Mundo::Dibuja()
 {
@@ -31,7 +27,6 @@ void Mundo::Dibuja()
 	pacman.Dibuja();
 	bonus.Dibuja();
 	fantasmas.Dibuja();
-	sprite->draw();
 }
 
 void Mundo::Mueve()
@@ -55,7 +50,7 @@ void Mundo::Inicializa()
 	z_ojo = 30;
 
 	//bonus.SetPos(5.0f, 5.0f);
-	sprite = new Sprite("imagenes/pacman.png", 5, 5, 10, 10);
+	
 }
 
 void Mundo::Tecla(unsigned char key)

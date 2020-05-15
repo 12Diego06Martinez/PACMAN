@@ -3,14 +3,17 @@
 #include "ETSIDI.h"
 #include "Pacman.h"
 
+#include <iostream>
+using namespace ETSIDI;
+using ETSIDI::getTexture;
 
+Sprite* sprite;
 
 // CONSTRUCTOR-DESTRUCTOR
 
 Pacman::Pacman()
 {
-	radio = 1.0f;
-	rojo = verde = azul = 255;
+	sprite = new Sprite("imagenes/pacman.png", 5, 5, 10, 10);
 }
 
 Pacman::~Pacman()
@@ -19,14 +22,13 @@ Pacman::~Pacman()
 }
 
 
+
 // METODOS
 
 void Pacman::Dibuja()
 {
-	glColor3ub(rojo, verde, azul);
-	glTranslatef(posicion.x, posicion.y, 0);
-	glutSolidSphere(radio,20,20); //Para empezar el pacman se representa como una esfera, ya lo cambiaremos
-	glTranslatef(-posicion.x, -posicion.y, 0);
+
+	sprite->draw();
 }
 
 void Pacman::Mueve(float t)
