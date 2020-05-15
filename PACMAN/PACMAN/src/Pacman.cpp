@@ -33,8 +33,13 @@ void Pacman::Dibuja()
 
 void Pacman::Mueve(float t)
 {
-	posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
-	velocidad = velocidad + aceleracion * t;
+	posicion.x = posicion.x + velocidad.x * t + aceleracion.x * (0.5f * t * t);
+	posicion.y = posicion.y + velocidad.y * t + 0.5f * aceleracion.y * t * t;
+	velocidad.x = velocidad.x + aceleracion.x * t;
+	velocidad.y = velocidad.y + aceleracion.y * t;
+
+	pacman->setPos(posicion.x,posicion.y);
+	//pacman->setVel(velocidad.x, velocidad.y);
 }
 
 void Pacman::SetVel(float vx, float vy)

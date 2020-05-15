@@ -68,6 +68,12 @@ void Mundo::TeclaEspecial(unsigned char key)
 	case GLUT_KEY_RIGHT:
 		pacman.SetVel(5.0f, 0.0f);
 		break;
+	case GLUT_KEY_DOWN:
+		pacman.SetVel(0.0f,-5.0f);
+		break;
+	case GLUT_KEY_UP:
+		pacman.SetVel(0.0f, 5.0f);
+		break;
 	}
 }
 
