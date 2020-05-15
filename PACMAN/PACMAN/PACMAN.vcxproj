@@ -115,6 +115,8 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>tmp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <IncludePath>D:\DIEGO\PROGRAMAS\INFORMATICA INDUSTRIAL\LIBRERIAS\glut-376\include;$(IncludePath)</IncludePath>
@@ -131,6 +133,8 @@
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>tmp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <IncludePath>D:\DIEGO\PROGRAMAS\INFORMATICA INDUSTRIAL\LIBRERIAS\glut-376\include;$(IncludePath)</IncludePath>
