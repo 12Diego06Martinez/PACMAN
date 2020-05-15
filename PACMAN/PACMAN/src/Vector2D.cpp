@@ -13,3 +13,16 @@ Vector2D::~Vector2D()
 {
 
 }
+
+float Vector2D:: operator *(Vector2D& v)
+{
+	return x * v.x + y * v.y;
+}
+
+Vector2D Vector2D:: operator *(float m)
+{
+	Vector2D res;
+	res.x = m * x;
+	res.y = m * y;
+	return res;
+}

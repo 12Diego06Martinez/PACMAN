@@ -63,10 +63,10 @@ void Mundo::TeclaEspecial(unsigned char key)
 	switch (key)
 	{
 	case GLUT_KEY_LEFT:
-		//pacman.SetVel(-5.0f, 0.0f);
+		pacman.SetVel(-5.0f, 0.0f);
 		break;
 	case GLUT_KEY_RIGHT:
-		//pacman.SetVel(5.0f, 0.0f);
+		pacman.SetVel(5.0f, 0.0f);
 		break;
 	}
 }

@@ -30,11 +30,11 @@ void CoordinadorPacman::Dibuja()
 	}
 	else if (estado == JUEGO)
 	{
-		//mundo.Dibuja();
+		mundo.Dibuja();
 	}
 	else if (estado == GAMEOVER)
 	{
-		//mundo.Dibuja();
+		mundo.Dibuja();
 		ETSIDI::setTextColor(1, 0, 0);
 		ETSIDI::setFont("fuentes/Bitwise.ttf", 16);
 		ETSIDI::printxy("GAMEOVER: Has perdido", -5, 10);
@@ -42,7 +42,7 @@ void CoordinadorPacman::Dibuja()
 	}
 	else if (estado == FIN)
 	{
-		//mundo.Dibuja();
+		mundo.Dibuja();
 		ETSIDI::setFont("fuentes/Bitwise.ttf", 16);
 		ETSIDI::printxy("ENHORABUENA, ¡Has triunfado!", -5, 10);
 		ETSIDI::printxy("Pulsa -C- para continuar", -5, 9);
@@ -64,7 +64,7 @@ void CoordinadorPacman::Tecla(unsigned char key)
 	{
 		if (key == 'e')
 		{
-			//mundo.Inicializa();
+			mundo.Inicializa();
 			estado = JUEGO;
 		}
 		else if (key == 's')
@@ -72,7 +72,7 @@ void CoordinadorPacman::Tecla(unsigned char key)
 	}
 	else if (estado == JUEGO)
 	{
-		//mundo.Tecla(key);
+		mundo.Tecla(key);
 	}
 	else if (estado == GAMEOVER)
 	{
@@ -88,7 +88,7 @@ void CoordinadorPacman::Tecla(unsigned char key)
 
 void CoordinadorPacman::TeclaEspecial(unsigned char key)
 {
-	//if (estado == JUEGO)
-		//mundo.TeclaEspecial(key);
+	if (estado == JUEGO)
+		mundo.TeclaEspecial(key);
 }
 

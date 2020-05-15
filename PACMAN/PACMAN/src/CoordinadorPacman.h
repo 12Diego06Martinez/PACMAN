@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Mundo.h"
 
 class CoordinadorPacman
 {
@@ -13,7 +13,7 @@ public:
 	void Dibuja();
 
 private:
-	//Mundo mundo;
+	Mundo mundo;
 	enum Estado { INICIO, JUEGO, GAMEOVER, FIN };
 	Estado estado;
 };
