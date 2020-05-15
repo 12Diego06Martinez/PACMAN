@@ -33,8 +33,8 @@ void Pacman::Dibuja()
 
 void Pacman::Mueve(float t)
 {
-	//posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
-	//velocidad = velocidad + aceleracion * t;
+	posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
+	velocidad = velocidad + aceleracion * t;
 }
 
 void Pacman::SetVel(float vx, float vy)
@@ -50,10 +50,6 @@ void Pacman::SetColor(unsigned char r, unsigned char v, unsigned char a)
 	azul = a;
 }
 
-void Pacman::SetRadio(float r)
-{
-	radio = r;
-}
 
 void Pacman::SetPos(float ix, float iy)
 {
