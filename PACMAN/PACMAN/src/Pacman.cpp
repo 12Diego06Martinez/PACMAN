@@ -1,6 +1,8 @@
 #include "stdlib.h"
 #include "glut.h"
+#include "ETSIDI.h"
 #include "Pacman.h"
+
 
 
 // CONSTRUCTOR-DESTRUCTOR
