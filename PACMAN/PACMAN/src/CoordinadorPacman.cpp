@@ -3,6 +3,7 @@
 #include "stdlib.h"
 #include "glut.h"
 
+
 CoordinadorPacman::CoordinadorPacman()
 {
 	estado = INICIO;
@@ -12,6 +13,7 @@ CoordinadorPacman::CoordinadorPacman()
 CoordinadorPacman::~CoordinadorPacman()
 {
 }
+
 
 void CoordinadorPacman::Dibuja()
 {
@@ -54,7 +56,7 @@ void CoordinadorPacman::Mueve()
 {
 	if (estado == JUEGO)
 	{
-		
+		mundo.Mueve();
 	}
 }
 

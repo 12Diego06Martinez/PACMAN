@@ -7,13 +7,13 @@
 using namespace ETSIDI;
 using ETSIDI::getTexture;
 
-Sprite* sprite;
+Sprite *pacman;
 
 // CONSTRUCTOR-DESTRUCTOR
 
 Pacman::Pacman()
 {
-	sprite = new Sprite("imagenes/pacman.png", 5, 5, 10, 10);
+	pacman= new Sprite("imagenes/pacman.png", 0, 5, 3, 3);
 }
 
 Pacman::~Pacman()
@@ -28,7 +28,7 @@ Pacman::~Pacman()
 void Pacman::Dibuja()
 {
 
-	sprite->draw();
+	pacman->draw();
 }
 
 void Pacman::Mueve(float t)
@@ -42,14 +42,6 @@ void Pacman::SetVel(float vx, float vy)
 	velocidad.x = vx;
 	velocidad.y = vy;
 }
-
-void Pacman::SetColor(unsigned char r, unsigned char v, unsigned char a)
-{
-	rojo = r;
-	verde = v;
-	azul = a;
-}
-
 
 void Pacman::SetPos(float ix, float iy)
 {

@@ -1,13 +1,24 @@
 #include "Fantasmas.h"
 #include "stdlib.h"
 #include "glut.h"
+#include "ETSIDI.h"
 
+#include <iostream>
+using namespace ETSIDI;
+using ETSIDI::getTexture;
 
+Sprite *fantasmaN;
+Sprite *fantasmaA;
+Sprite *fantasmaR;
+Sprite *fantasmaV;
 
 //CONSTRUCTOR-DESTRUCTOR
 Fantasmas::Fantasmas()
 {
-	tamaño = 5;
+	fantasmaN = new Sprite("imagenes/FantasmaNaranja.png", -2, 2, 2, 2);
+	fantasmaA = new Sprite("imagenes/FantasmaAzul.png", 0, 2, 2, 2);
+	fantasmaR = new Sprite("imagenes/FantasmaRosa.png", 2, 2, 2, 2);
+	fantasmaV = new Sprite("imagenes/FantasmaVerde.png", 4, 2, 2, 2);
 }
 
 Fantasmas::~Fantasmas() 
@@ -19,31 +30,23 @@ Fantasmas::~Fantasmas()
 
 void Fantasmas::Dibuja()
 {
-	glPushMatrix();
-	glTranslatef(posicion.x, posicion.y + 1, 0);
-	glColor3f(1.0f, 1.0f, 0.0f);
-	glutSolidCube(tamaño); //El hombre se representa como un cubo
-	glPopMatrix();
+	fantasmaN->draw();
+	fantasmaA->draw();
+	fantasmaR->draw();
+	fantasmaV->draw();
 }
 
 
 void Fantasmas::Mueve(float t)
 {
-	//posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
-	//velocidad = velocidad + aceleracion * t;
+	posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
+	velocidad = velocidad + aceleracion * t;
 }
 
 void Fantasmas::SetVel(float vx, float vy)
 {
 	velocidad.x = vx;
 	velocidad.y = vy;
-}
-
-void Fantasmas::SetColor(unsigned char r, unsigned char v, unsigned char a)
-{
-	rojo = r;
-	verde = v;
-	azul = a;
 }
 
 void Fantasmas::SetPos(float ix, float iy)
