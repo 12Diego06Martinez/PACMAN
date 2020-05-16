@@ -27,6 +27,7 @@ void Mundo::Dibuja()
 	pacman.Dibuja();
 	bonus.Dibuja();
 	fantasmas.Dibuja();
+
 }
 
 void Mundo::Mueve()

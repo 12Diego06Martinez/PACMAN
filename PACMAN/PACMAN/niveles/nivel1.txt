@@ -1,0 +1,36 @@
+N 34
+M 20
+P P P P P P P P P P P P P P P P P P P P 
+P P P P P P P P P P P P P P P P P P P P 
+P P P P P P P P P P P P P P F P P P P P 
+P P P P P P P P P P P P P P L P P P P P 
+P P P P P P P P P P P P P P L P P P P P 
+P P P P P P P P P P P P P P L P P P P P 
+P P P P P P P P P P P P P P L P P P P P 
+P P P P P P P P P P P P P P L P P P P P 
+P P P P P P P P P P L L L L L P P P P P 
+P P P P P P P P P P L V L P P P P P P P 
+P P P P P P P P P P L L L P P P P P P P 
+P P P L L L L L P P L L L L P P P P P P 
+P P L P P P P P P P P P P L P P P P P P 
+P L P P P P P P P P P P P L P P P P P P 
+P L P P P P P P P P P P P L P P P P P P 
+P P L P P P P P P P P P P L P P P P P P 
+P P P L L L L P P P P P P L P P P P P P 
+P P P P P P P L P P P L L L L L M P P P 
+P P P P P P P P L P P L L L P P L P P P
+P P P P P P P P L P P L B L P P L P P P 
+P P P P P P P L P P P L L L P P M P P P 
+P P L L L L L L P P P P P P P P M P P P 
+P P P P P P P P P P P P P P P P M P P P 
+P P P P P P L L L L M P P P P P M P P P 
+P P P P P P L P P P L P P P P P M P P P 
+P P P P P P L P P P L L L M M M M P P P 
+P P P P P P L P P P P P P P P P P P P P 
+P P P P S P L P P P P P P P P P P P P P 
+P M L L L L L L L L L L P P P L L L L P 
+I L L L L L L P P P P L L L L L L L L P 
+P M L L L L L W P P P P P P P P L L L P 
+P M L L L L M P P P P P P P L L L L L P 
+P M L L L M M P P P P P P P L J L L L P 
+P P N P P P P P P P P P P P P P P P P P 

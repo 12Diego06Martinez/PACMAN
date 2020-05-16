@@ -2,6 +2,7 @@
 #include "Bonus.h"
 #include"Pacman.h"
 #include "Fantasmas.h"
+#include "Laberinto.h"
 
 class Mundo
 {
@@ -15,6 +16,7 @@ private:
 	Pacman pacman;
 	Fantasmas fantasmas;
 	Bonus bonus;
+	Laberinto laberinto;
 
 
 

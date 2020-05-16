@@ -38,6 +38,8 @@ int main(int argc, char* argv[])
 	glutKeyboardFunc(OnKeyboardDown);
 	glutSpecialFunc(OnSpecialKeyboardDown); //gestion de los cursores
 
+
+	
 	//pasarle el control a GLUT,que llamara a los callbacks
 	glutMainLoop();
 
