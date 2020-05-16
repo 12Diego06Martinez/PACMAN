@@ -30,6 +30,7 @@
     <ClCompile Include="src\Bonus.cpp" />
     <ClCompile Include="src\CoordinadorPacman.cpp" />
     <ClCompile Include="src\Fantasmas.cpp" />
+    <ClCompile Include="src\Interaccion.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\Pacman.cpp" />
@@ -39,6 +40,7 @@
     <ClInclude Include="src\Bonus.h" />
     <ClInclude Include="src\CoordinadorPacman.h" />
     <ClInclude Include="src\Fantasmas.h" />
+    <ClInclude Include="src\Interaccion.h" />
     <ClInclude Include="src\Mundo.h" />
     <ClInclude Include="src\Pacman.h" />
     <ClInclude Include="src\Vector2D.h" />
