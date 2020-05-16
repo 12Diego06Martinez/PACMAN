@@ -1,14 +1,19 @@
 #include "stdlib.h"
 #include "glut.h"
+#include "ETSIDI.h"
 #include "Pacman.h"
 
+#include <iostream>
+using namespace ETSIDI;
+using ETSIDI::getTexture;
+
+Sprite *pacman;
 
 // CONSTRUCTOR-DESTRUCTOR
 
 Pacman::Pacman()
 {
-	radio = 1.0f;
-	rojo = verde = azul = 255;
+	pacman= new Sprite("imagenes/pacman.png", 0, 5, 3, 3);
 }
 
 Pacman::~Pacman()
@@ -17,38 +22,27 @@ Pacman::~Pacman()
 }
 
 
+
 // METODOS
 
 void Pacman::Dibuja()
 {
-	glColor3ub(rojo, verde, azul);
-	glTranslatef(posicion.x, posicion.y, 0);
-	glutSolidSphere(radio,20,20); //Para empezar el pacman se representa como una esfera, ya lo cambiaremos
-	glTranslatef(-posicion.x, -posicion.y, 0);
+
+	pacman->draw();
 }
 
 void Pacman::Mueve(float t)
 {
-	//posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
+	posicion.x = posicion.x + velocidad.x * t + aceleracion.x * (0.5f * t * t);
+	posicion.y = posicion.y + velocidad.y * t + 0.5f * aceleracion.y * t * t;
 	//velocidad = velocidad + aceleracion * t;
+	pacman->setPos(posicion.x,posicion.y);
 }
 
 void Pacman::SetVel(float vx, float vy)
 {
 	velocidad.x = vx;
 	velocidad.y = vy;
-}
-
-void Pacman::SetColor(unsigned char r, unsigned char v, unsigned char a)
-{
-	rojo = r;
-	verde = v;
-	azul = a;
-}
-
-void Pacman::SetRadio(float r)
-{
-	radio = r;
 }
 
 void Pacman::SetPos(float ix, float iy)

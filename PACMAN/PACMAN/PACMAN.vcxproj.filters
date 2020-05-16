@@ -46,6 +46,7 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="src\Elemento.cpp">
+    <ClCompile Include="src\Interaccion.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -85,5 +86,9 @@
     <Text Include="niveles\nivel1.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
+    <ClInclude Include="src\Interaccion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+
   </ItemGroup>
 </Project>

@@ -1,7 +1,6 @@
 #include "Mundo.h"
 //#include "Interaccion.h"
 #include "ETSIDI.h"
-
 #include <stdlib.h>
 #include "glut.h"
 #include <math.h>
@@ -29,7 +28,6 @@ void Mundo::Dibuja()
 	bonus.Dibuja();
 	fantasmas.Dibuja();
 
-	
 }
 
 void Mundo::Mueve()
@@ -53,6 +51,7 @@ void Mundo::Inicializa()
 	z_ojo = 30;
 
 	//bonus.SetPos(5.0f, 5.0f);
+	
 }
 
 void Mundo::Tecla(unsigned char key)
@@ -69,6 +68,12 @@ void Mundo::TeclaEspecial(unsigned char key)
 		break;
 	case GLUT_KEY_RIGHT:
 		pacman.SetVel(5.0f, 0.0f);
+		break;
+	case GLUT_KEY_DOWN:
+		pacman.SetVel(0.0f,-5.0f);
+		break;
+	case GLUT_KEY_UP:
+		pacman.SetVel(0.0f, 5.0f);
 		break;
 	}
 }

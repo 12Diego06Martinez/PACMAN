@@ -33,6 +33,7 @@
     <ClCompile Include="src\Fantasmas.cpp" />
     <ClCompile Include="src\Hueco.cpp" />
     <ClCompile Include="src\Laberinto.cpp" />
+    <ClCompile Include="src\Interaccion.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\Pacman.cpp" />
@@ -46,6 +47,7 @@
     <ClInclude Include="src\Fantasmas.h" />
     <ClInclude Include="src\Hueco.h" />
     <ClInclude Include="src\Laberinto.h" />
+    <ClInclude Include="src\Interaccion.h" />
     <ClInclude Include="src\Mundo.h" />
     <ClInclude Include="src\Pacman.h" />
     <ClInclude Include="src\Pared.h" />
