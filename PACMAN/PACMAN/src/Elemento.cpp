@@ -2,8 +2,7 @@
 #include<sstream>
 #include<fstream>
 #include"glut.h"
-#define ANCHO_BLOQUE 10
-#define ANCHO_PIXEL 1
+
 
 
 

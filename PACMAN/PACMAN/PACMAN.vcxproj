@@ -38,12 +38,13 @@
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\Pacman.cpp" />
     <ClCompile Include="src\Pared.cpp" />
+    <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lib\ETSIDI.h" />
     <ClInclude Include="src\Bonus.h" />
     <ClInclude Include="src\CoordinadorPacman.h" />
     <ClInclude Include="src\Elemento.h" />
+    <ClInclude Include="src\Estructura.h" />
     <ClInclude Include="src\Fantasmas.h" />
     <ClInclude Include="src\Hueco.h" />
     <ClInclude Include="src\Interaccion.h" />
@@ -51,6 +52,7 @@
     <ClInclude Include="src\Mundo.h" />
     <ClInclude Include="src\Pacman.h" />
     <ClInclude Include="src\Pared.h" />
+    <ClInclude Include="src\Vector2D.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="niveles\nivel1.txt" />

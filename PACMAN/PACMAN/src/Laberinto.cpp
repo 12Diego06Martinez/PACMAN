@@ -1,9 +1,4 @@
 #include "Laberinto.h"
-#include<fstream>
-#include<iostream>
-#include<string>
-#include"ETSIDI.h"
-#include "Vector2D.h"
 
 
 using namespace std;
@@ -46,7 +41,7 @@ Laberinto::Laberinto(std::string filename){
 			}*/
 
 
-			else if (buffer[2 * j] == 'J') { elementos.push_back(new Hueco); jugador.asignarCoord(c(i, j)); } //el nuestro es pacman
+			else if (buffer[2 * j] == 'J') { elementos.push_back(new Hueco); pacman.asignarCoord(c(i, j)); } 
 
 
 			elementos[PosVect(i, j, M)]->asignarCoord(c(i, j));					//asigna las coordenadas de la casilla al elemento

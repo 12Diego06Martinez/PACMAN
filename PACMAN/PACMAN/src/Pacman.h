@@ -1,8 +1,8 @@
 #pragma once
-#include "ETSIDI.h"
+#include "Vector2D.h"
+#include "Elemento.h"
 
-
-class Pacman
+class Pacman:public Elemento
 {
 public:
 	Pacman();

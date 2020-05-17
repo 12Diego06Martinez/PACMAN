@@ -1,9 +1,10 @@
 #pragma once
 #include<string>
-//#include "Vector2D.h"
-#include "ETSIDI.h"
-#include "CoordinadorPacman.h"
+#include <vector>
+#include "Vector2D.h"
+#include "Estructura.h"
 
+using namespace std;
 
 class Elemento
 {
@@ -13,7 +14,6 @@ public:
 	Vector2D coordenadas;			//marca la posicion en el mapa
 	std::string nombre_dibujo;			//contiene el nombre del fichero que lo dibuja
 	std::vector<colores_t> colores;		//vector de colores que indica de que color es cada pixel
-
 
 	Elemento(bool solid, colores_t color) :Solid(solid), nombre_dibujo("monocromo") { colores.push_back(color); }
 	Elemento(bool solid, std::string nombre_dibujo) :Solid(solid), nombre_dibujo(nombre_dibujo) { leerDibujo(); }
@@ -28,6 +28,6 @@ public:
 	void setColor(unsigned char, unsigned char, unsigned char);
 	void setSolid(bool solid) { Solid = solid; }
 	void noSolid() { Solid = false; }
-	
+
 };
 

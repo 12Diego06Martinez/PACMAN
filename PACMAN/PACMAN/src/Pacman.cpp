@@ -1,6 +1,7 @@
 #include "stdlib.h"
 #include "glut.h"
 #include "Pacman.h"
+#include "ETSIDI.h"
 
 #include <iostream>
 using namespace ETSIDI;
