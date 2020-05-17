@@ -1,8 +1,5 @@
 #pragma once
 #include "Mundo.h"
-#define PosVect(i,j,M)  j+i*M
-enum colores_t { BLANCO, NEGRO, AMARILLO, AZUL_CLARO, AZUL_OSCURO };
-
 
 class CoordinadorPacman
 {
